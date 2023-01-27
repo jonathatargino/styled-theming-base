@@ -1,9 +1,10 @@
 import React from 'react'
-import Button from './Button'
+import GlobalStyle from './styles/GlobalStyle'
 
 function App() {
   return (
     <>
+      <GlobalStyle />
     </>
   )
 }
