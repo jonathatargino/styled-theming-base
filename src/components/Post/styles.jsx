@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
-  background: #333;
+  background: ${props => props.theme.secondary};
   display: flex;
   flex-direction: column;
   padding: 16px;
-  border-radius: 10px;
+  border-radius: ${props => props.theme.borderRadius};
 
   h2 {
     margin: 0 0 8px;
