@@ -1,12 +1,9 @@
 import React, { useContext } from 'react'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
+import { ThemeContext } from './contexts/ThemeContext'
 
 import GlobalStyle from './styles/GlobalStyle'
-
-import Footer from './components/Footer'
-import Header from './components/Header'
-import PostList from './components/PostList'
-import { ThemeContext } from './contexts/ThemeContext'
+import Layout from './components/Layout'
 
 
 function App() {
@@ -15,9 +12,7 @@ function App() {
   return (
     <StyledThemeProvider theme={currentTheme}>
       <GlobalStyle />
-      <Header/>
-      <PostList />
-      <Footer/>
+      <Layout />
     </StyledThemeProvider>
   )
 }
